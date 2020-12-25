@@ -55,11 +55,11 @@
 		24E62AA0505B8228E535EBA036BF6506 /* Pods-XMVerificationCodeInputView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMVerificationCodeInputView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32BB7A950807E381779A26106F27454C /* Pods-XMVerificationCodeInputView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMVerificationCodeInputView_Tests-Info.plist"; sourceTree = "<group>"; };
-		35DB70A9B51BD5B9410405DDB5DC4C3C /* Pods_XMVerificationCodeInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XMVerificationCodeInputView_Example.framework; path = "Pods-XMVerificationCodeInputView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DB70A9B51BD5B9410405DDB5DC4C3C /* Pods_XMVerificationCodeInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMVerificationCodeInputView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456B6EFE6E2BD2E3A3F9FE027FB06EA4 /* Pods-XMVerificationCodeInputView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMVerificationCodeInputView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		499C142EE57929D284A1B5DFD7D34BA6 /* XMRectangleInputBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMRectangleInputBox.h; path = XMVerificationCodeInputView/Classes/XMRectangleInputBox.h; sourceTree = "<group>"; };
 		49C941B03AD25FBACD677CFAE13D7FE3 /* XMVerificationCodeInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMVerificationCodeInputView-dummy.m"; sourceTree = "<group>"; };
-		546B799075744A85D52C269DA0833173 /* XMVerificationCodeInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XMVerificationCodeInputView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		546B799075744A85D52C269DA0833173 /* XMVerificationCodeInputView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XMVerificationCodeInputView.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		58215A9BED6B879D6E97BCB8C95BBC0D /* XMVerificationCodeInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMVerificationCodeInputView-Info.plist"; sourceTree = "<group>"; };
 		5C4D9A498E185211B9BC714380975ABA /* Pods-XMVerificationCodeInputView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMVerificationCodeInputView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		684F062786375B1A113D6DB52E4EFF29 /* XMVerificationCodeInputView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMVerificationCodeInputView.m; path = XMVerificationCodeInputView/Classes/XMVerificationCodeInputView.m; sourceTree = "<group>"; };
@@ -67,13 +67,13 @@
 		81852F75FA55C4AF845B84125A237514 /* Pods-XMVerificationCodeInputView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMVerificationCodeInputView_Example-umbrella.h"; sourceTree = "<group>"; };
 		8F46D80A83FD208241E161C7C20E061F /* Pods-XMVerificationCodeInputView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMVerificationCodeInputView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		98DD739EA7949722207FDC55B9D7DD21 /* Pods-XMVerificationCodeInputView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMVerificationCodeInputView_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3C82712EFA84143AA84D60157B6F20B /* Pods-XMVerificationCodeInputView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMVerificationCodeInputView_Example-Info.plist"; sourceTree = "<group>"; };
 		A534110943290DEF7B36619D3B4333B3 /* Pods-XMVerificationCodeInputView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMVerificationCodeInputView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A626DCE653855DBD4DAAAA03289F5676 /* XMUnderlienInputBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMUnderlienInputBox.h; path = XMVerificationCodeInputView/Classes/XMUnderlienInputBox.h; sourceTree = "<group>"; };
 		AD5F17CCB219822B009257924176B38E /* XMUnderlienInputBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMUnderlienInputBox.m; path = XMVerificationCodeInputView/Classes/XMUnderlienInputBox.m; sourceTree = "<group>"; };
 		BD011A3ED8679A6FCF415B8B5D4B2B46 /* Pods-XMVerificationCodeInputView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMVerificationCodeInputView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BEB971AD2ED30D314A6C3EADFE31CF23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BEB971AD2ED30D314A6C3EADFE31CF23 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C1051B07F8CAD876173DCF6981459A3C /* Pods-XMVerificationCodeInputView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMVerificationCodeInputView_Tests-dummy.m"; sourceTree = "<group>"; };
 		C5016EF76EB8A27A2258B88897CF29AA /* Pods-XMVerificationCodeInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMVerificationCodeInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CBA45EA9E17693950CD70886CA71FF4B /* XMVerificationCodeInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMVerificationCodeInputView.release.xcconfig; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		D95AF7D4F5DD80CADE97DA0200610BB3 /* XMVerificationCodeInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMVerificationCodeInputView.h; path = XMVerificationCodeInputView/Classes/XMVerificationCodeInputView.h; sourceTree = "<group>"; };
 		DACDE0FEB65BC08ADF9688D6D48A8494 /* Pods-XMVerificationCodeInputView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMVerificationCodeInputView_Example.modulemap"; sourceTree = "<group>"; };
 		DD87744E7E3557350996B011BA021088 /* XMVerificationCodeInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMVerificationCodeInputView-umbrella.h"; sourceTree = "<group>"; };
-		ED7B56B1258807F631B87FF8EFD4A154 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		FB0CFB44FBC95719A94C5D66B766E515 /* XMVerificationCodeInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMVerificationCodeInputView.framework; path = XMVerificationCodeInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDDA93B37DF496175A71167B5F99791A /* Pods_XMVerificationCodeInputView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XMVerificationCodeInputView_Tests.framework; path = "Pods-XMVerificationCodeInputView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7B56B1258807F631B87FF8EFD4A154 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB0CFB44FBC95719A94C5D66B766E515 /* XMVerificationCodeInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMVerificationCodeInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA93B37DF496175A71167B5F99791A /* Pods_XMVerificationCodeInputView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMVerificationCodeInputView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -655,8 +655,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
