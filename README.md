@@ -7,6 +7,8 @@
 
 ## Example
 
+![IMG_5337.PNG](https://i.loli.net/2020/12/26/PEcijMIQ8zZK1gR.png)
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
