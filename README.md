@@ -1,17 +1,46 @@
 # XMVerificationCodeInputView
 
-[![CI Status](https://img.shields.io/travis/402187526@qq.com/XMVerificationCodeInputView.svg?style=flat)](https://travis-ci.org/402187526@qq.com/XMVerificationCodeInputView)
 [![Version](https://img.shields.io/cocoapods/v/XMVerificationCodeInputView.svg?style=flat)](https://cocoapods.org/pods/XMVerificationCodeInputView)
-[![License](https://img.shields.io/cocoapods/l/XMVerificationCodeInputView.svg?style=flat)](https://cocoapods.org/pods/XMVerificationCodeInputView)
 [![Platform](https://img.shields.io/cocoapods/p/XMVerificationCodeInputView.svg?style=flat)](https://cocoapods.org/pods/XMVerificationCodeInputView)
 
 ## Example
 
-![IMG_5337.PNG](https://i.loli.net/2020/12/26/PEcijMIQ8zZK1gR.png)
+<img src="https://i.loli.net/2020/12/26/PEcijMIQ8zZK1gR.png" width="185" height="400">
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Use
+    
+    一个简单验证码输入框 可以自定义颜色 字体等 支持自动布局
+    现默认有两种type 一种是下划线 一种是矩形 
+    可以自定义输入框样式 需继承于XMBaseInputBox 具体参考Example里的XMRhombusInputBox类
 
-## Requirements
+    //下划线类型
+    XMVerificationCodeInputView *underLineView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, 100, self.view.bounds.size.width-100, 50)];
+    //输入框个数 默认为4
+    underLineView.textCount = 6;
+    underLineView.boxType = XMVerificationCodeInputViewUnderline;
+    [self.view addSubview:underLineView];
+    underLineView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+    
+    //正方形类型
+    XMVerificationCodeInputView *squareInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(underLineView.frame)+50, self.view.bounds.size.width-100, 40)];
+    squareInputView.textCount = 5;
+    squareInputView.boxType = XMVerificationCodeInputViewSquare;
+    [self.view addSubview:squareInputView];
+    squareInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+    
+    //自定义类型
+    XMVerificationCodeInputView *customInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(squareInputView.frame)+50, self.view.bounds.size.width-100, 50)];
+    customInputView.boxType = XMVerificationCodeInputViewCustom;
+    customInputView.customInputBox = [XMRhombusInputBox class];
+    [self.view addSubview:customInputView];
+    customInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+
 
 ## Installation
 
@@ -24,7 +53,7 @@ pod 'XMVerificationCodeInputView'
 
 ## Author
 
-402187526@qq.com, minglica@isoftstone.com
+liming789456@qq.com
 
 ## License
 
