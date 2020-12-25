@@ -7,7 +7,8 @@
 //
 
 #import "XMViewController.h"
-#import <xm>
+#import <XMVerificationCodeInputView/XMVerificationCodeInputView.h>
+#import "XMRhombusInputBox.h"
 
 @interface XMViewController ()
 
@@ -18,13 +19,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    __weak typeof(self) weakself = self;
+    //下划线类型
+    XMVerificationCodeInputView *underLineView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, 100, self.view.bounds.size.width-100, 50)];
+    underLineView.textCount = 6;
+    underLineView.boxType = XMVerificationCodeInputViewUnderline;
+    [self.view addSubview:underLineView];
+    underLineView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+    
+    //正方形类型
+    XMVerificationCodeInputView *squareInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(underLineView.frame)+50, self.view.bounds.size.width-100, 40)];
+    squareInputView.textCount = 5;
+    squareInputView.boxType = XMVerificationCodeInputViewSquare;
+    [self.view addSubview:squareInputView];
+    squareInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+    
+    //自定义类型
+    XMVerificationCodeInputView *customInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(squareInputView.frame)+50, self.view.bounds.size.width-100, 50)];
+    customInputView.boxType = XMVerificationCodeInputViewCustom;
+    customInputView.customInputBox = [XMRhombusInputBox class];
+    [self.view addSubview:customInputView];
+    customInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
+        [weakself showAlertWithText:text];
+    } ;
+    
+	
+}
+
+- (void)showAlertWithText:(NSString *)text {
+    
+    UIAlertController *vc = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"输入的文本为:%@",text] preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    
+    [vc addAction:sure];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

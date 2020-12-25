@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BDACB1BB89CEAD1FDBDD6790 /* Pods_XMVerificationCodeInputView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B723DB332D79DC2D4AA3D /* Pods_XMVerificationCodeInputView_Example.framework */; };
 		CEF20732F8EE7042DAC7AB01 /* Pods_XMVerificationCodeInputView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524C7FABF0DDD1052408761C /* Pods_XMVerificationCodeInputView_Tests.framework */; };
+		E26784C4259641BD00ED64C6 /* XMRhombusInputBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E26784C3259641BD00ED64C6 /* XMRhombusInputBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +58,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7139273C6617BF30AADE447D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7139273C6617BF30AADE447D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CB453DAADE39AA8E70588B8 /* Pods-XMVerificationCodeInputView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMVerificationCodeInputView_Tests.release.xcconfig"; path = "Target Support Files/Pods-XMVerificationCodeInputView_Tests/Pods-XMVerificationCodeInputView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		809FBD94536DDF2E62F26229 /* XMVerificationCodeInputView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XMVerificationCodeInputView.podspec; path = ../XMVerificationCodeInputView.podspec; sourceTree = "<group>"; };
+		809FBD94536DDF2E62F26229 /* XMVerificationCodeInputView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XMVerificationCodeInputView.podspec; path = ../XMVerificationCodeInputView.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		894BDFA8F067823FEF12D89E /* Pods-XMVerificationCodeInputView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMVerificationCodeInputView_Example.debug.xcconfig"; path = "Target Support Files/Pods-XMVerificationCodeInputView_Example/Pods-XMVerificationCodeInputView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		932B723DB332D79DC2D4AA3D /* Pods_XMVerificationCodeInputView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMVerificationCodeInputView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C64B218FEBBC32C7F75C46D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C64B218FEBBC32C7F75C46D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D046AC11F2C95ACEDFA9A85F /* Pods-XMVerificationCodeInputView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMVerificationCodeInputView_Example.release.xcconfig"; path = "Target Support Files/Pods-XMVerificationCodeInputView_Example/Pods-XMVerificationCodeInputView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCE096BBF7101ADE68AD2900 /* Pods-XMVerificationCodeInputView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMVerificationCodeInputView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XMVerificationCodeInputView_Tests/Pods-XMVerificationCodeInputView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E26784C2259641BD00ED64C6 /* XMRhombusInputBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMRhombusInputBox.h; sourceTree = "<group>"; };
+		E26784C3259641BD00ED64C6 /* XMRhombusInputBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMRhombusInputBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XMViewController.h */,
 				6003F5A6195388D20070C39A /* XMViewController.m */,
+				E26784C2259641BD00ED64C6 /* XMRhombusInputBox.h */,
+				E26784C3259641BD00ED64C6 /* XMRhombusInputBox.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +198,6 @@
 				DCE096BBF7101ADE68AD2900 /* Pods-XMVerificationCodeInputView_Tests.debug.xcconfig */,
 				7CB453DAADE39AA8E70588B8 /* Pods-XMVerificationCodeInputView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +212,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				883E854191880C2C821DD704 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +252,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "402187526@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2VLQ5AZ3L2;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -257,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -316,6 +325,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		883E854191880C2C821DD704 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMVerificationCodeInputView_Example/Pods-XMVerificationCodeInputView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XMVerificationCodeInputView/XMVerificationCodeInputView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMVerificationCodeInputView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XMVerificationCodeInputView_Example/Pods-XMVerificationCodeInputView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B128D93F3842FABB6B8C6096 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26784C4259641BD00ED64C6 /* XMRhombusInputBox.m in Sources */,
 				6003F59E195388D20070C39A /* XMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -475,6 +503,7 @@
 			baseConfigurationReference = 894BDFA8F067823FEF12D89E /* Pods-XMVerificationCodeInputView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XMVerificationCodeInputView/XMVerificationCodeInputView-Prefix.pch";
 				INFOPLIST_FILE = "XMVerificationCodeInputView/XMVerificationCodeInputView-Info.plist";
@@ -491,6 +520,7 @@
 			baseConfigurationReference = D046AC11F2C95ACEDFA9A85F /* Pods-XMVerificationCodeInputView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XMVerificationCodeInputView/XMVerificationCodeInputView-Prefix.pch";
 				INFOPLIST_FILE = "XMVerificationCodeInputView/XMVerificationCodeInputView-Info.plist";

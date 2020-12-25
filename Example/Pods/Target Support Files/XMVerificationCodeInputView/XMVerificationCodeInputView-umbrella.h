@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "XMBaseInputBox.h"
+#import "XMIndividualInputBoxProtocol.h"
+#import "XMRectangleInputBox.h"
+#import "XMUnderlienInputBox.h"
+#import "XMVerificationCodeInputView.h"
 
 FOUNDATION_EXPORT double XMVerificationCodeInputViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char XMVerificationCodeInputViewVersionString[];

@@ -7,11 +7,12 @@
 
 #import <UIKit/UIKit.h>
 #import "XMIndividualInputBoxProtocol.h"
+#import "XMBaseInputBox.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMUnderlienInputBox : UIView<XMIndividualInputBoxProtocol>
+@interface XMUnderlienInputBox : XMBaseInputBox
 
 @property(nonatomic) UIColor *textColor;
 
@@ -20,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) UIColor *boxTintColor;
 
 @property(nonatomic) UIColor *boxTinetHilightedColor;
+
+@property(nonatomic) CGFloat boxLineWidth;
 
 @end
 

@@ -48,6 +48,11 @@ typedef NS_ENUM(NSUInteger, XMVerificationCodeInputViewType) {
 @property(nonatomic) UIColor *boxTinetHilightedColor;
 
 /**
+ 下划线粗细 或者border粗细
+ */
+@property(nonatomic) CGFloat boxLineWidth;
+
+/**
  自定义输入框的类 需要遵守XMIndividualInputBoxProtocol协议 当type == XMVerificationCodeInputViewCustom生效
  */
 @property(nonatomic) Class customInputBox;
