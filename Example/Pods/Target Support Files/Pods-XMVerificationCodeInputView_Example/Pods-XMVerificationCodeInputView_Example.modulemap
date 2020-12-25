@@ -1,0 +1,6 @@
+framework module Pods_XMVerificationCodeInputView_Example {
+  umbrella header "Pods-XMVerificationCodeInputView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

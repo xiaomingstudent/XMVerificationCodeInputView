@@ -1,0 +1,6 @@
+framework module XMVerificationCodeInputView {
+  umbrella header "XMVerificationCodeInputView-umbrella.h"
+
+  export *
+  module * { export * }
+}

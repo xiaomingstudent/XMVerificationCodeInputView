@@ -1,0 +1,16 @@
+PODS:
+  - XMVerificationCodeInputView (0.1.0)
+
+DEPENDENCIES:
+  - XMVerificationCodeInputView (from `../`)
+
+EXTERNAL SOURCES:
+  XMVerificationCodeInputView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XMVerificationCodeInputView: eb20e819920c4870530970b656ea2d236bed7e10
+
+PODFILE CHECKSUM: f64e0a56d214eb84d1d581dc2594e028a8e7b20c
+
+COCOAPODS: 1.9.1
