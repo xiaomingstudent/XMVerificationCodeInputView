@@ -1,19 +1,19 @@
 {
   "name": "XMVerificationCodeInputView",
-  "version": "0.1.1",
-  "summary": "A short description of XMVerificationCodeInputView.",
+  "version": "0.1.0",
+  "summary": "a inputview for verification code",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/402187526@qq.com/XMVerificationCodeInputView",
+  "homepage": "https://github.com/xiaomingstudent/XMVerificationCodeInputView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "402187526@qq.com": "minglica@isoftstone.com"
+    "xiaomingstudent": "402187526@qq.com"
   },
   "source": {
-    "git": "https://github.com/402187526@qq.com/XMVerificationCodeInputView.git",
-    "tag": "0.1.1"
+    "git": "https://github.com/xiaomingstudent/XMVerificationCodeInputView.git",
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
