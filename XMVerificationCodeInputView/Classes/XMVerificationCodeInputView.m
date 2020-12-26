@@ -98,7 +98,7 @@
                 [self.inputBoxs addObject:underlineBox];
             }
                 break;
-            case XMVerificationCodeInputViewSquare:{
+            case XMVerificationCodeInputViewRetangle:{
                 XMRectangleInputBox *squareBox = [[XMRectangleInputBox alloc] init];
                 squareBox.textColor = self.textColor;
                 squareBox.textFont = self.textFont;
@@ -225,7 +225,7 @@
                 box.textColor = textColor;
             }
             break;
-        case XMVerificationCodeInputViewSquare:
+        case XMVerificationCodeInputViewRetangle:
             for (XMRectangleInputBox *box in self.inputBoxs ) {
                 box.textColor = textColor;
             }
@@ -245,7 +245,7 @@
                 box.textFont = textFont;
             }
             break;
-        case XMVerificationCodeInputViewSquare:
+        case XMVerificationCodeInputViewRetangle:
             for (XMRectangleInputBox *box in self.inputBoxs ) {
                 box.textFont = textFont;
             }
@@ -264,7 +264,7 @@
                 box.boxTinetHilightedColor = boxTinetHilightedColor;
             }
             break;
-        case XMVerificationCodeInputViewSquare:
+        case XMVerificationCodeInputViewRetangle:
             for (XMRectangleInputBox *box in self.inputBoxs ) {
                 box.boxTinetHilightedColor = boxTinetHilightedColor;
             }
@@ -283,7 +283,7 @@
                 box.boxTintColor = boxTintColor;
             }
             break;
-        case XMVerificationCodeInputViewSquare:
+        case XMVerificationCodeInputViewRetangle:
             for (XMRectangleInputBox *box in self.inputBoxs ) {
                 box.boxTintColor = boxTintColor;
             }
@@ -301,7 +301,7 @@
                 box.boxLineWidth = boxLineWidth;
             }
             break;
-        case XMVerificationCodeInputViewSquare:
+        case XMVerificationCodeInputViewRetangle:
             for (XMRectangleInputBox *box in self.inputBoxs ) {
                 box.boxBorderWidth= boxLineWidth;
             }

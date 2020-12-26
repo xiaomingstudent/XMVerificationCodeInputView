@@ -29,17 +29,17 @@
         [weakself showAlertWithText:text];
     } ;
     
-    //正方形类型
-    XMVerificationCodeInputView *squareInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(underLineView.frame)+50, self.view.bounds.size.width-100, 40)];
-    squareInputView.textCount = 5;
-    squareInputView.boxType = XMVerificationCodeInputViewSquare;
-    [self.view addSubview:squareInputView];
-    squareInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
+    //矩形带边框类型
+    XMVerificationCodeInputView *retangleInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(underLineView.frame)+50, self.view.bounds.size.width-100, 40)];
+    retangleInputView.textCount = 5;
+    retangleInputView.boxType = XMVerificationCodeInputViewRetangle;
+    [self.view addSubview:retangleInputView];
+    retangleInputView.textDidInputComplete = ^(NSString * _Nonnull text) {
         [weakself showAlertWithText:text];
     } ;
     
     //自定义类型
-    XMVerificationCodeInputView *customInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(squareInputView.frame)+50, self.view.bounds.size.width-100, 50)];
+    XMVerificationCodeInputView *customInputView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(retangleInputView.frame)+50, self.view.bounds.size.width-100, 50)];
     customInputView.boxType = XMVerificationCodeInputViewCustom;
     customInputView.customInputBox = [XMRhombusInputBox class];
     [self.view addSubview:customInputView];

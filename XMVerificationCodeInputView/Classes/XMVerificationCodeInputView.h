@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, XMVerificationCodeInputViewType) {
     XMVerificationCodeInputViewUnderline, //输入框为下划线样式
-    XMVerificationCodeInputViewSquare, //输入框为正方形框
+    XMVerificationCodeInputViewRetangle, //输入框为矩形框(如果需要为正方形 需自己计算boxspace)
     XMVerificationCodeInputViewCustom, //自定义输入框样式
 };
 
