@@ -9,10 +9,13 @@
 #import "XMIndividualInputBoxProtocol.h"
 #import "XMUnderlienInputBox.h"
 #import "XMRectangleInputBox.h"
+#import "XMVerificationField.h"
 
 @interface XMVerificationCodeInputView ()<UITextFieldDelegate>
 
-@property(nonatomic) UITextField *textField;
+@property(nonatomic) NSString *text;
+
+@property(nonatomic) XMVerificationField *textField;
 
 @property(nonatomic) NSMutableArray<id<XMIndividualInputBoxProtocol>> *inputBoxs;
 
@@ -49,7 +52,7 @@
 
 - (void)initUI {
     
-    self.textField = [[UITextField alloc] initWithFrame:self.bounds];
+    self.textField = [[XMVerificationField alloc] initWithFrame:self.bounds];
     //隐藏field光标
     [self.textField setTintColor:[UIColor clearColor]];
     self.textField.keyboardType = UIKeyboardTypeNumberPad;

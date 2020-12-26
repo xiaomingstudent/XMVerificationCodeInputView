@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, XMVerificationCodeInputViewType) {
 /**
 当前输入文本 可以利用KVO进行观察
  */
-@property (nonatomic) NSString *text;
+@property (nonatomic,readonly) NSString *text;
 
 //以下为输入框的UI设置 当type == XMVerificationCodeInputViewCustom不生效
 

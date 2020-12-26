@@ -5,10 +5,12 @@
 //  Created by 李明 on 2020/12/26.
 //
 
-#import "XMVerifivstionField.h"
+#import "XMVerificationField.h"
 
-@implementation XMVerifivstionField
+@implementation XMVerificationField
 
-
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    return NO;
+}
 
 @end

@@ -37,12 +37,7 @@
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    
-    UIView *view = [super hitTest:point withEvent:event];
-    if ([self.contentView.subviews containsObject:view] || self.contentView == view) {
-        return self;
-    }
-    return view;
+    return self;
 }
 
 #pragma mark XMIndividualInputBoxProtocol

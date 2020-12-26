@@ -15,6 +15,7 @@
 #import "XMRectangleInputBox.h"
 #import "XMUnderlienInputBox.h"
 #import "XMVerificationCodeInputView.h"
+#import "XMVerificationField.h"
 
 FOUNDATION_EXPORT double XMVerificationCodeInputViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char XMVerificationCodeInputViewVersionString[];

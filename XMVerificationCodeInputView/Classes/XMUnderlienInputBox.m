@@ -45,7 +45,6 @@
 - (UILabel *)textLabel {
     if (!_textLabel) {
         _textLabel = [[UILabel alloc] init];
-        _textLabel.userInteractionEnabled = YES;
         _textLabel.textAlignment = NSTextAlignmentCenter;
         _textLabel.font = self.textFont;
         _textLabel.textColor = self.textColor;
