@@ -23,6 +23,7 @@
     //下划线类型
     XMVerificationCodeInputView *underLineView = [[XMVerificationCodeInputView alloc] initWithFrame:CGRectMake(50, 100, self.view.bounds.size.width-100, 50)];
     underLineView.textCount = 6;
+    underLineView.secureEntry = YES;
     underLineView.boxType = XMVerificationCodeInputViewUnderline;
     [self.view addSubview:underLineView];
     underLineView.textDidInputComplete = ^(NSString * _Nonnull text) {

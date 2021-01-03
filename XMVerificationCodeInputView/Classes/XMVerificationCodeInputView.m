@@ -53,8 +53,7 @@
 - (void)initUI {
     
     self.textField = [[XMVerificationField alloc] initWithFrame:self.bounds];
-    //隐藏field光标
-    [self.textField setTintColor:[UIColor clearColor]];
+    self.textField.hidden = YES;
     self.textField.keyboardType = UIKeyboardTypeNumberPad;
     self.textField.delegate = self;
     [self addSubview:self.textField];
@@ -74,6 +73,11 @@
 - (void)setCustomInputBox:(Class)customInputBox {
     _customInputBox = customInputBox;
     [self resetUI];
+}
+
+- (void)setOnlyNumber:(BOOL)onlyNumber {
+    _onlyNumber = onlyNumber;
+    self.textField.secureTextEntry = onlyNumber;
 }
 
 - (void)resetUI {
@@ -154,6 +158,7 @@
     for (int i = 0;i < self.textCount; i++) {
         id<XMIndividualInputBoxProtocol> inputBox = self.inputBoxs[i];
         [inputBox deleteInputBoxText];
+        inputBox.cleared = YES;
     }
 }
 
@@ -181,11 +186,17 @@
                 if (start >= string.length) {
                     break;
                 }
+                inputBox.cleared = NO;
                 [inputBox setInputBoxText:[string substringWithRange:NSMakeRange(start, 1)]];
                 start++;
                 self.text = [self.text stringByAppendingFormat:@"%@",string];
                 self.textFieldText = [self.textFieldText stringByAppendingFormat:@" "];
                 self.textField.text = self.textFieldText;
+                if (self.secureEntry) {
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [inputBox setInputBoxText:@"●"];
+                    });
+                }
                 if (self.text.length == self.textCount && self.textDidInputComplete) {
                     self.textDidInputComplete(self.text);
                 }
@@ -200,6 +211,7 @@
             
             if ([inputBox boxContent].length > 0) {
                 [inputBox deleteInputBoxText];
+                inputBox.cleared = YES;
                 
                 if (self.text.length > 0) {
                     self.text = [self.text substringWithRange:NSMakeRange(0, self.text.length - 1)];
