@@ -75,11 +75,6 @@
     [self resetUI];
 }
 
-- (void)setOnlyNumber:(BOOL)onlyNumber {
-    _onlyNumber = onlyNumber;
-    self.textField.secureTextEntry = onlyNumber;
-}
-
 - (void)resetUI {
     for (id<XMIndividualInputBoxProtocol> inputBox in self.inputBoxs) {
         if ([inputBox isKindOfClass:[UIView class]]) {

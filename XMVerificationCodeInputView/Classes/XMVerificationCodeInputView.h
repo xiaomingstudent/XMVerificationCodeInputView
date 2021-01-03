@@ -25,10 +25,6 @@ typedef NS_ENUM(NSUInteger, XMVerificationCodeInputViewType) {
  */
 @property (nonatomic) CGFloat inputBoxSpace;
 /**
- 限制只能输入数字
- */
-@property(nonatomic) BOOL onlyNumber;
-/**
 输入以密码的形式展示
 */
 @property(nonatomic) BOOL secureEntry;
