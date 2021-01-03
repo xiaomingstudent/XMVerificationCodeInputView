@@ -1,5 +1,5 @@
 PODS:
-  - XMVerificationCodeInputView (0.1.5)
+  - XMVerificationCodeInputView (0.1.6)
 
 DEPENDENCIES:
   - XMVerificationCodeInputView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XMVerificationCodeInputView: 2bfe480fb2740e5fcab9a64a240156b94da0d929
+  XMVerificationCodeInputView: 90a8e43cb12612e7211e7eeb00739937ff84141f
 
 PODFILE CHECKSUM: f64e0a56d214eb84d1d581dc2594e028a8e7b20c
 

@@ -1,6 +1,6 @@
 {
   "name": "XMVerificationCodeInputView",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "a inputview for verification code",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xiaomingstudent/XMVerificationCodeInputView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xiaomingstudent/XMVerificationCodeInputView.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "9.0"
