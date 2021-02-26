@@ -16,6 +16,8 @@
 
 @implementation XMBaseInputBox
 
+@synthesize cleared = _cleared;
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

@@ -24,6 +24,13 @@ typedef NS_ENUM(NSUInteger, XMVerificationCodeInputViewType) {
  两个输入框之间的间距
  */
 @property (nonatomic) CGFloat inputBoxSpace;
+/**
+输入以密码的形式展示
+*/
+@property(nonatomic) BOOL secureEntry;
+/**
+ 输入完成之后的回调
+ */
 
 @property (nonatomic) void(^textDidInputComplete)(NSString *text);
 /**
